@@ -27,4 +27,23 @@
 
     <!-- Template Stylesheet -->
     <link href="{{  asset('frontend/css/style.css') }}" rel="stylesheet">
+    @if (!empty($css))
+        @foreach ($css as $value)
+            @if(!empty($value))
+                <link rel="stylesheet" href="{{ asset('frontend/css/'.$value) }}">
+            @endif
+        @endforeach
+    @endif
+
+    @if (!empty($plugincss))
+        @foreach ($plugincss as $value)
+            @if(!empty($value))
+                <link rel="stylesheet" href="{{ asset('frontend/'.$value) }}">
+            @endif
+        @endforeach
+    @endif
+
+    <script>
+        var baseurl = "{{ asset('/') }}";
+    </script>
 </head>

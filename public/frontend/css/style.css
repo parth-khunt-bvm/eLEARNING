@@ -434,3 +434,7 @@
     padding-right: 0;
     border-right: none;
 }
+
+.has-error{
+    border: 1px solid #e12028;
+}

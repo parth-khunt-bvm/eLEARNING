@@ -9,7 +9,25 @@ use Illuminate\Http\Request;
 class ContactController extends Controller
 {
     public function index(){
-        return view('frontend.pages.contact');
+        $data['css'] = array(
+            'toastr/toastr.min.css'
+        );
+        $data['plugincss'] = array(
+        );
+        $data['pluginjs'] = array(
+            'toastr/toastr.min.js',
+            'validate/jquery.validate.min.js',
+        );
+        $data['js'] = array(
+            'comman_function.js',
+            'ajaxfileupload.js',
+            'jquery.form.min.js',
+            'contact.js',
+        );
+        $data['funinit'] = array(
+            'Contact.init()'
+        );
+        return view('frontend.pages.contact', $data);
     }
 
     public function save(Request $request){
