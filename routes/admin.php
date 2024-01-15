@@ -38,4 +38,8 @@ Route::group(['prefix' => $adminPrefix, 'middleware' => ['admin']], function() {
 
     Route::get('admin-conatct-data/list', [AdminConatctDataController::class, 'list'])->name('admin-conatct-data.list');
     Route::post('admin-conatct-data/ajaxcall', [AdminConatctDataController::class, 'ajaxcall'])->name('admin-conatct-data.ajaxcall');
+    Route::post('admin-conatct-data/save-import-conatct-data', [AdminConatctDataController::class, 'save_import'])->name('admin-conatct-data.save-import-conatct-data');
+    Route::get('admin-conatct-data/export',[AdminConatctDataController::class, 'getContactData'])->name('admin-conatct-data.export');
+    Route::get('admin-conatct-data/pdf', [AdminConatctDataController::class, 'contactDataPdf'])->name('admin-conatct-data.pdf');
+
 });

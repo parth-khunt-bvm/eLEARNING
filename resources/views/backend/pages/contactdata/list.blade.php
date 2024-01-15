@@ -14,7 +14,8 @@
                 </div>
 
                 <div class="card-toolbar">
-
+                    <a href="{{ route('admin-conatct-data.pdf') }}" class="ml-4 mr-4"><span class="fas fa-file-pdf fa-2x"></span></a>
+                    <a href="{{ route('admin-conatct-data.export') }}"><span class="fas fa-file-excel fa-2x"></span></a>
                 </div>
             </div>
             <div class="card-body">
@@ -27,7 +28,6 @@
                             <th>Email</th>
                             <th>Subject</th>
                             <th>Message</th>
-                            <th>Date</th>
                             <th>Action</th>
                         </tr>
                     </thead>

@@ -178,8 +178,6 @@ class AdminusersController extends Controller
                 echo json_encode($list);
                 break;
 
-
-
             case 'common-activity':
                 $objAdminusers = new Adminusers();
                 $data = $request->input('data');
