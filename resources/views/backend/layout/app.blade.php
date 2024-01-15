@@ -9,7 +9,7 @@
 		<!--begin::Header Mobile-->
 		<div id="kt_header_mobile" class="header-mobile align-items-center header-mobile-fixed">
 			<!--begin::Logo-->
-			<a href="index.html">
+			<a href="{{ route('admin-login')}}">
 				<img alt="Logo" src="{{  asset('backend/media/logos/logo-light.png') }}" />
 			</a>
 			<!--end::Logo-->

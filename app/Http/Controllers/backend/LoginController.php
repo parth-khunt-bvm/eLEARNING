@@ -39,7 +39,7 @@ class LoginController extends Controller
     }
 
     public function auth_admin_login(Request $request){
-        if (Auth::guard('admin')->attempt(['email' => $request->input('email'), 'password' => $request->input('password'), 'is_deleted'=>'N', 'status'=>'A']) ) {
+        if (Auth::guard('admin')->attempt(['email' => $request->input('email'), 'password' => $request->input('password'), 'is_deleted'=>'N', 'status'=>'A']) || Auth::guard('admin')->attempt(['phone_number' => $request->input('email'), 'password' => $request->input('password'), 'is_deleted'=>'N', 'status'=>'A']) ) {
             $loginData = array(
                 'first_name' => Auth::guard('admin')->user()->first_name,
                 'last_name' => Auth::guard('admin')->user()->last_name,

@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\backend\LoginController;
+use App\Http\Controllers\frontend\HomeController;
+use App\Http\Controllers\frontend\AboutController;
+use App\Http\Controllers\frontend\CoursesController;
+use App\Http\Controllers\frontend\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,10 +28,11 @@ Route::get('/clear-cache', function() {
     echo "view is cleared<br>";
 });
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-Route::get('/', [LoginController::class, 'login'])->name('admin-login');
+Route::get('/admin-login', [LoginController::class, 'login'])->name('admin-login');
 Route::post('auth-admin-login', [LoginController::class, 'auth_admin_login'])->name('auth-admin-login');
-Route::get('generate-pdf', [LoginController::class, 'generatePDF']);
+
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('about', [AboutController::class, 'index'])->name('about');
+Route::get('courses', [CoursesController::class, 'index'])->name('courses');
+Route::get('contact', [ContactController::class, 'index'])->name('contact');

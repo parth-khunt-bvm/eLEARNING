@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Audittrails;
 use DB;
 use Route;
 use Session;
@@ -23,13 +22,15 @@ class Adminusers extends Model
             1 => 'users.first_name',
             2 => 'users.last_name',
             3 => 'users.email',
-            4 => DB::raw('DATE_FORMAT(users.created_at, "%d-%b-%Y")'),
-            5 => DB::raw('(CASE WHEN users.status = "A" THEN "Actived" ELSE "Deactived" END)'),
+            4 => 'users.email',
+            5 => DB::raw('DATE_FORMAT(users.created_at, "%d-%b-%Y")'),
+            6 => DB::raw('(CASE WHEN users.status = "A" THEN "Actived" ELSE "Deactived" END)'),
 
         );
         $query = Adminusers ::from('users')
                 ->where("users.id", "!=", Auth()->guard('admin')->user()['id'])
                 ->where("users.user_type", "=", "A")
+                ->where("users.deletable", "=", "Y")
                 ->where("users.is_deleted", "=", "N");
 
         if (!empty($requestData['search']['value'])) {   // if there is a search parameter, $requestData['search']['value'] contains search parameter
@@ -57,7 +58,7 @@ class Adminusers extends Model
 
         $resultArr = $query->skip($requestData['start'])
                     ->take($requestData['length'])
-                    ->select('users.id', 'users.first_name', 'users.last_name', 'users.email', DB::raw('DATE_FORMAT(users.created_at, "%d-%b-%Y") as created_date'), 'users.status')
+                    ->select('users.id', 'users.first_name', 'users.last_name', 'users.phone_number', 'users.email', DB::raw('DATE_FORMAT(users.created_at, "%d-%b-%Y") as created_date'), 'users.status')
                     ->get();
 
         $data = array();
@@ -81,6 +82,7 @@ class Adminusers extends Model
             $nestedData[] = $row['first_name'];
             $nestedData[] = $row['last_name'];
             $nestedData[] = $row['email'];
+            $nestedData[] = $row['phone_number'];
             $nestedData[] = $row['created_date'];
             $nestedData[] = $status;
             $nestedData[] = $actionhtml;
@@ -120,12 +122,6 @@ class Adminusers extends Model
                 $objUsers->created_at = date('Y-m-d H:i:s');
                 $objUsers->updated_at = date('Y-m-d H:i:s');
                 if($objUsers->save()){
-                    $currentRoute = Route::current()->getName();
-                    unset($requestData['_token']);
-                    unset($requestData['password']);
-                    unset($requestData['new_confirm_password']);
-                    $objAudittrails = new Audittrails();
-                    $res = $objAudittrails->add_audit('Insert', str_replace(".", "/", $currentRoute) , json_encode($requestData->input()) , 'Admin users');
                     return 'added';
                 }else{
                     return 'wrong';
@@ -157,10 +153,6 @@ class Adminusers extends Model
                 $objUsers->status = $requestData['status'];
                 $objUsers->updated_at = date('Y-m-d H:i:s');
                 if($objUsers->save()){
-                    $currentRoute = Route::current()->getName();
-                    unset($requestData['_token']);
-                    $objAudittrails = new Audittrails();
-                    $res = $objAudittrails->add_audit('Update', str_replace(".", "/", $currentRoute) , json_encode($requestData->input()) , 'Admin users');
                     return 'added';
                 }else{
                     return 'wrong';
@@ -197,10 +189,6 @@ class Adminusers extends Model
 
         $objAdminusers->updated_at = date("Y-m-d H:i:s");
         if($objAdminusers->save()){
-            $currentRoute = Route::current()->getName();
-            unset($requestData['_token']);
-            $objAudittrails = new Audittrails();
-            $res = $objAudittrails->add_audit($event, str_replace(".", "/", $currentRoute) , json_encode($requestData) , 'Admin users');
             return true;
         }else{
             return false ;

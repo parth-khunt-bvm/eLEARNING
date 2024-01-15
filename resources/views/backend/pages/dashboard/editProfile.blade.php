@@ -27,8 +27,8 @@ if(file_exists( public_path().'/upload/userprofile/'.$data['userimage']) && $dat
                     <form class="form" id="update-profile" method="POST" action="{{ route('save-profile') }}" enctype="multipart/form-data">@csrf
                         <div class="card-body">
 
-
-                                <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label>First Name
                                         <span class="text-danger">*</span></label>
@@ -37,18 +37,18 @@ if(file_exists( public_path().'/upload/userprofile/'.$data['userimage']) && $dat
                                         <input type="hidden" name="edit_id" class="form-control" value="{{ $data['id'] }}">
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Last Name
                                         <span class="text-danger">*</span></label>
                                         <input type="text" name="last_name" class="form-control" placeholder="Enter your full name last name" value="{{ $data['last_name'] }}">
                                     </div>
                                 </div>
+                            </div>
 
+                            <div class="row">
 
-
-
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Email
                                         <span class="text-danger">*</span></label>
@@ -56,9 +56,17 @@ if(file_exists( public_path().'/upload/userprofile/'.$data['userimage']) && $dat
                                     </div>
                                 </div>
 
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Phone number
+                                        <span class="text-danger">*</span></label>
+                                        <input type="text" name="phone_number" class="form-control" placeholder="Enter your phone number" value="{{ $data['phone_number'] }}">
+                                    </div>
+                                </div>
+                            </div>
 
 
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Profile Image</label>
                                         <div class="">

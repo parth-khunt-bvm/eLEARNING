@@ -5,11 +5,13 @@ var Dashboard = function(){
             first_name : {required: true},
             last_name : {required: true},
             email: {required: true,email:true},
+            phone_number: {required: true},
         };
 
         var message = {
             first_name : {required: "Please enter your first name"},
             last_name : {required: "Please enter your last name"},
+            phone_number : {required: "Please enter your phone number"},
             email :{
                 required : "Please enter your register email address",
                 email: "Please enter valid email address"

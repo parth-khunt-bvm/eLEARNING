@@ -18,10 +18,11 @@ class CreateUsersTable extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('email')->unique();
-            $table->string('phone_number')->nullable();
+            $table->string('phone_number')->nullable()->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('userimage')->nullable();
+            $table->enum('deletable',['Y','N'])->default("Y")->comment("Y for deletable, N for not deletable");
             $table->enum('user_type',['A','U'])->default("A")->comment("A for Admin, U for Users");
             $table->enum('status',['A','I'])->default("A")->comment("A for Active, I for not Inactive");
             $table->enum('is_deleted',['Y','N'])->default("N")->comment("Y for deleted, N for not deleted");

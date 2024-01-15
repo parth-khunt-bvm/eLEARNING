@@ -39,6 +39,7 @@
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>Email</th>
+                            <th>Phone Number</th>
                             <th>Date</th>
                             <th>Status</th>
                             <th>Action</th>

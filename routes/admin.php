@@ -34,24 +34,4 @@ Route::group(['prefix' => $adminPrefix, 'middleware' => ['admin']], function() {
     Route::get('admin-users/edit/{editId}', [AdminusersController::class, 'edit'])->name('admin-users.edit');
     Route::post('admin-users/save-edit', [AdminusersController::class, 'saveEdit'])->name('admin-users.save-edit');
     Route::post('admin-users/ajaxcall', [AdminusersController::class, 'ajaxcall'])->name('admin-users.ajaxcall');
-
-    // Slug routes
-    Route::get('slug/list', [SlugController::class, 'list'])->name('slug.list');
-    Route::get('slug/add', [SlugController::class, 'add'])->name('slug.add');
-    Route::post('slug/save-add', [SlugController::class, 'saveAdd'])->name('slug.save-add');
-    Route::get('slug/edit/{editId}', [SlugController::class, 'edit'])->name('slug.edit');
-    Route::post('slug/save-edit', [SlugController::class, 'saveEdit'])->name('slug.save-edit');
-    Route::post('slug/ajaxcall', [SlugController::class, 'ajaxcall'])->name('slug.ajaxcall');
-
-    // Document routes
-    Route::get('document/list', [DocumentController::class, 'list'])->name('document.list');
-    Route::get('document/add', [DocumentController::class, 'add'])->name('document.add');
-    Route::post('document/save-add', [DocumentController::class, 'saveAdd'])->name('document.save-add');
-    Route::get('document/edit/{editId}', [DocumentController::class, 'edit'])->name('document.edit');
-    Route::post('document/save-edit', [DocumentController::class, 'saveEdit'])->name('document.save-edit');
-    Route::post('document/ajaxcall', [DocumentController::class, 'ajaxcall'])->name('document.ajaxcall');
-
-    Route::get('document/generate-pdf/{id}', [DocumentController::class, 'generatePdf'])->name('document.generate-pdf');
-
-
 });

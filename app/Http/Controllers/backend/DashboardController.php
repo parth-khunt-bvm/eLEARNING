@@ -78,16 +78,18 @@ class DashboardController extends Controller
              $return['jscode'] = '$(".submitbtn:visible").removeAttr("disabled");$("#loader").hide();';
             $return['message'] = 'Your profile successfully updated.';
             $return['redirect'] = route('edit-profile');
-        } else {
-            if ($result == "email_exist") {
-                $return['status'] = 'error';
+        } elseif ($result == "email_exist") {
+                $return['status'] = 'warning';
                  $return['jscode'] = '$(".submitbtn:visible").removeAttr("disabled");$("#loader").hide();';
                 $return['message'] = 'The email address has already been registered.';
-            }else{
+        } elseif($result == "phone_number_exist"){
+                $return['status'] = 'warning';
+                $return['jscode'] = '$(".submitbtn:visible").removeAttr("disabled");$("#loader").hide();';
+                $return['message'] = 'The phone number has already been registered.';
+        }else{
                 $return['status'] = 'error';
                  $return['jscode'] = '$(".submitbtn:visible").removeAttr("disabled");$("#loader").hide();';
                 $return['message'] = 'Something goes to wrong';
-            }
         }
         echo json_encode($return);
         exit;
