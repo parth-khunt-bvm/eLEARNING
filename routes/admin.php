@@ -7,6 +7,7 @@ use App\Http\Controllers\backend\AuditTrailsController;
 use App\Http\Controllers\backend\AdminusersController;
 use App\Http\Controllers\backend\SlugController;
 use App\Http\Controllers\backend\DocumentController;
+use App\Http\Controllers\backend\AdminConatctDataController;
 
 Route::get('admin-logout', [LoginController::class, 'adminLogout'])->name('admin-logout');
 
@@ -34,4 +35,7 @@ Route::group(['prefix' => $adminPrefix, 'middleware' => ['admin']], function() {
     Route::get('admin-users/edit/{editId}', [AdminusersController::class, 'edit'])->name('admin-users.edit');
     Route::post('admin-users/save-edit', [AdminusersController::class, 'saveEdit'])->name('admin-users.save-edit');
     Route::post('admin-users/ajaxcall', [AdminusersController::class, 'ajaxcall'])->name('admin-users.ajaxcall');
+
+    Route::get('admin-conatct-data/list', [AdminConatctDataController::class, 'list'])->name('admin-conatct-data.list');
+    Route::post('admin-conatct-data/ajaxcall', [AdminConatctDataController::class, 'ajaxcall'])->name('admin-conatct-data.ajaxcall');
 });

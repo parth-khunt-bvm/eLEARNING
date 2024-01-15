@@ -10,4 +10,7 @@ class ContactController extends Controller
     public function index(){
         return view('frontend.pages.contact');
     }
+
+    public function save(){
+    }
 }
