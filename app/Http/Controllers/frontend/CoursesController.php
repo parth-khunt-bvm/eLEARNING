@@ -10,4 +10,10 @@ class CoursesController extends Controller
     public function index(){
         return view('frontend.pages.courses');
     }
+
+
+    public function courseDetail(){
+
+        return view('frontend.pages.courses_detail');
+    }
 }

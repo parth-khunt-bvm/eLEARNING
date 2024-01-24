@@ -10,9 +10,24 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
             <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
-            <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
+            {{-- <a href="{{ route('about') }}" class="nav-item nav-link">About</a> --}}
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="{{ route('about') }}" class="dropdown-item">About Us</a>
+                    <a href="{{ route('student-works')}}" class="dropdown-item">Student Works</a>
+                </div>
+            </div>
             <a href="{{ route('courses') }}" class="nav-item nav-link">Courses</a>
             <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="team.html" class="dropdown-item">Our Team</a>
+                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                    <a href="404.html" class="dropdown-item">404 Page</a>
+                </div>
+            </div>
         </div>
         <a href="{{ route('contact') }}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i
                 class="fa fa-arrow-right ms-3"></i></a>
