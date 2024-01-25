@@ -64,9 +64,12 @@ return [
 
             "header_5" => "Ready to Ignite Your Creativity?",
 
-            "pera_5" => "Embark on your multimedia education journey today! Explore our courses, connect with
+            "pera_5_1" => "Embark on your multimedia education journey today! Explore our courses, connect with
                 our vibrant community, and unleash your creative potential at New Dreamz Multimedia
                 Education. Let's shape the future of digital creativity together.",
+
+            "pera_5_2" => "Start your creative journey with New Dreamz Multimedia Education – Where Dreams Take
+                Flight in the Digital World!",
         ],
 
         "full_stack_development" => [
@@ -74,7 +77,7 @@ return [
             "title" => "Full Stack Development",
             "header_1" => "Welcome to New Dreamz Multimedia Education - Unleash Your Full Potential in Full
                 Stack Development!",
-                "pera_1" => "Embark on an exciting journey into the heart of technology with New Dreamz
+            "pera_1" => "Embark on an exciting journey into the heart of technology with New Dreamz
                 Multimedia Education. Our platform is your gateway to mastering Full Stack
                 Development, the art of seamlessly bridging front-end and back-end technologies.
                 Whether you're a coding enthusiast or someone looking to switch careers, our
@@ -129,9 +132,12 @@ return [
 
             "header_5" => "Ready to Transform Your Career?",
 
-            "pera_5" => "Embark on your Full Stack Development journey today! Explore our courses, connect
+            "pera_5_1" => "Embark on your Full Stack Development journey today! Explore our courses, connect
             with our vibrant community, and unlock the doors to exciting career opportunities in the
             ever-evolving tech industry at New Dreamz Multimedia Education.",
+
+            "pera_5_2" => "Start your Full Stack Development adventure with New Dreamz Multimedia Education –
+            Where Dreams Meet Code!",
         ],
 
         "backend_development" => [
@@ -140,7 +146,7 @@ return [
             "header_1" => "Welcome to New Dreamz Multimedia Education - Uncover the Power of Backend
                 Development!",
 
-                "pera_1" => "Embark on a transformative journey into the backbone of web applications with New
+            "pera_1" => "Embark on a transformative journey into the backbone of web applications with New
                 Dreamz Multimedia Education. Our platform is dedicated to providing you with the skills
                 and knowledge to master Backend Development, the engine that powers seamless and
                 dynamic digital experiences. Whether you're an aspiring coder or a seasoned developer,
@@ -197,9 +203,12 @@ return [
 
             "header_5" => "Ready to Elevate Your Coding Skills?",
 
-            "pera_5" => "Embark on your Backend Development journey today! Explore our courses, connect with
+            "pera_5_1" => "Embark on your Backend Development journey today! Explore our courses, connect with
             our dynamic community, and unlock the doors to exciting career opportunities in the
             ever-evolving tech industry at New Dreamz Multimedia Education.",
+
+            "pera_5_2" => "Start your Backend Development adventure with New Dreamz Multimedia Education –
+            Where Code Meets Innovation!",
         ],
 
         "frontend_development" => [
@@ -208,7 +217,7 @@ return [
             "header_1" => "Welcome to New Dreamz Multimedia Education - Crafting Visually Stunning Web
             Experiences with Frontend Development!",
 
-                "pera_1" => "Embark on an exhilarating journey into the world of Frontend Development with New
+            "pera_1" => "Embark on an exhilarating journey into the world of Frontend Development with New
                 Dreamz Multimedia Education. Our platform is dedicated to empowering you with the
                 skills and creativity to master the art of creating captivating user interfaces and
                 seamless user experiences. Whether you're an aspiring designer or a seasoned
@@ -264,9 +273,12 @@ return [
 
             "header_5" => "Ready to Redefine User Experiences?",
 
-            "pera_5" => "Embark on your Frontend Development journey today! Explore our courses, connect with
+            "pera_5_1" => "Embark on your Frontend Development journey today! Explore our courses, connect with
             our vibrant community, and unlock the doors to exciting career opportunities in the
             ever-evolving tech industry at New Dreamz Multimedia Education.",
+
+            "pera_5_2" => "Start your Frontend Development adventure with New Dreamz Multimedia Education –
+            Where Creativity Meets Code!",
         ],
 
         "graphic_design" => [
@@ -332,9 +344,12 @@ return [
 
             "header_5" => "Ready to Transform Ideas into Visual Masterpieces?",
 
-            "pera_5" => "Embark on your Graphic Design journey today! Explore our courses, connect with our
+            "pera_5_1" => "Embark on your Graphic Design journey today! Explore our courses, connect with our
             vibrant community, and unlock the doors to exciting career opportunities in the
             ever-evolving world of design at New Dreamz Multimedia Education.",
+
+            "pera_5_2" => "Start your Graphic Design adventure with New Dreamz Multimedia Education – Where
+            Creativity Takes Center Stage!",
         ],
 
         "ielts_pte" => [
@@ -400,9 +415,12 @@ return [
 
             "header_5" => "Ready to Unlock Global Opportunities?",
 
-            "pera_5" => "Embark on your IELTS/PTE preparation journey today! Explore our courses, connect with
+            "pera_5_1" => "Embark on your IELTS/PTE preparation journey today! Explore our courses, connect with
             our dynamic community, and elevate your English language skills to open doors to
             academic and professional success at New Dreamz Multimedia Education.",
+
+            "pera_5_2" => "Start your journey towards language proficiency with New Dreamz Multimedia Education
+            – Where Dreams Speak the Language of Success!",
         ],
     ],
 ];

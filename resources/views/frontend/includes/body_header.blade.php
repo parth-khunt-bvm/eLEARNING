@@ -10,7 +10,6 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
             <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
-            {{-- <a href="{{ route('about') }}" class="nav-item nav-link">About</a> --}}
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
                 <div class="dropdown-menu fade-down m-0">
@@ -19,6 +18,13 @@
                 </div>
             </div>
             <a href="{{ route('courses') }}" class="nav-item nav-link">Courses</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Student Corner</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="{{ route('about') }}" class="dropdown-item">Why I choose ELearning</a>
+                    <a href="{{ route('student-works')}}" class="dropdown-item">Placement Partners</a>
+                </div>
+            </div>
             <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>

@@ -12,9 +12,8 @@ class CoursesController extends Controller
     }
 
 
-    public function courseDetail($coursesName){
+    public function courseDetail($coursesName = null){
         $data['coursesDetails'] = Config::get('courses_details.courses_details')[$coursesName];
-        // ccd($data['coursesDetails']);
         return view('frontend.pages.courses_detail', $data);
     }
 }

@@ -56,7 +56,8 @@
                     <h5 class="mb-4">{{ $coursesDetails['header_4']}}</h5>
                     <p class="mb-4">{{ $coursesDetails['pera_4']}}</p>
                     <h5 class="mb-4">{{ $coursesDetails['header_5']}}</h5>
-                    <p class="mb-4">{{ $coursesDetails['pera_5']}}</p>
+                    <p class="mb-4">{{ $coursesDetails['pera_5_1']}}</p>
+                    <p class="mb-4">{{ $coursesDetails['pera_5_2']}}</p>
                 </div>
             </div>
         </div>
