@@ -7,6 +7,7 @@ use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\frontend\AboutController;
 use App\Http\Controllers\frontend\CoursesController;
 use App\Http\Controllers\frontend\ContactController;
+use App\Http\Controllers\frontend\StudentCornerControler;
 use App\Http\Controllers\frontend\StudentWorksController;
 
 /*
@@ -37,10 +38,14 @@ Route::post('auth-admin-login', [LoginController::class, 'auth_admin_login'])->n
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('about', [AboutController::class, 'index'])->name('about');
 Route::get('courses', [CoursesController::class, 'index'])->name('courses');
-// Route::get('courses-detail/{coursesname}', [CoursesController::class, 'courseDetail'])->name('courses-detail');
+Route::get('courses-detail/{coursesname}', [CoursesController::class, 'courseDetail'])->name('courses-detail');
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
 Route::post('contact-save', [ContactController::class, 'save'])->name('contact-save');
 Route::get('about/student-works', [StudentWorksController::class, 'index'])->name('student-works');
+
+Route::get('why-i-choose-elearning', [StudentCornerControler::class, 'chooseElearning'])->name('why-i-choose-elearning');
+Route::get('placement-partners', [StudentCornerControler::class, 'placementPartners'])->name('placement-partners');
+
 
 
 

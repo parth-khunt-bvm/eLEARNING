@@ -21,8 +21,8 @@
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Student Corner</a>
                 <div class="dropdown-menu fade-down m-0">
-                    <a href="{{ route('about') }}" class="dropdown-item">Why I choose ELearning</a>
-                    <a href="{{ route('student-works')}}" class="dropdown-item">Placement Partners</a>
+                    <a href="{{ route('why-i-choose-elearning') }}" class="dropdown-item">Why I choose ELearning</a>
+                    <a href="{{ route('placement-partners')}}" class="dropdown-item">Placement Partners</a>
                 </div>
             </div>
             <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>

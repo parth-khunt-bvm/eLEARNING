@@ -32,7 +32,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative">
-                        <img class="img-fluid w-100 " src="{{ $coursesDetails['image'] }}" alt=""
+                        <img class="img-fluid w-100 " src="{{asset($coursesDetails['image'])}}" alt=""
                             style="object-fit: cover;">
                     </div>
                     <h5 class="mb-4 mt-4">{{ $coursesDetails['apart']['title'] }}</h5>

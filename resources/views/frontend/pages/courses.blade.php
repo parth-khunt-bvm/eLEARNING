@@ -39,7 +39,7 @@
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
                             <a href="{{route('courses-detail', $course_key)}}">
-                                <img class="img-fluid" src="{{  $value['image'] }}" alt="">
+                                <img class="img-fluid" src="{{ asset($value['image']) }}" alt="">
                             </a>
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="{{route('courses-detail', $course_key)}}" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"

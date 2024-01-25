@@ -2,7 +2,7 @@
 return [
     "courses_details" => [
         "web_designing" => [
-            "image" => asset('frontend/img/course-1.jpg'),
+            "image" => 'frontend/img/course-1.jpg',
 
             "title" => "Web Designing",
 
@@ -73,7 +73,7 @@ return [
         ],
 
         "full_stack_development" => [
-            "image" => asset('frontend/img/course-2.jpg'),
+            "image" => 'frontend/img/course-2.jpg',
             "title" => "Full Stack Development",
             "header_1" => "Welcome to New Dreamz Multimedia Education - Unleash Your Full Potential in Full
                 Stack Development!",
@@ -141,7 +141,7 @@ return [
         ],
 
         "backend_development" => [
-            "image" => asset('frontend/img/course-3.jpg'),
+            "image" => 'frontend/img/course-3.jpg',
             "title" => "Backend Development",
             "header_1" => "Welcome to New Dreamz Multimedia Education - Uncover the Power of Backend
                 Development!",
@@ -212,7 +212,7 @@ return [
         ],
 
         "frontend_development" => [
-            "image" => asset('frontend/img/course-4.jpg'),
+            "image" => 'frontend/img/course-4.jpg',
             "title" => "Frontend Development",
             "header_1" => "Welcome to New Dreamz Multimedia Education - Crafting Visually Stunning Web
             Experiences with Frontend Development!",
@@ -282,7 +282,7 @@ return [
         ],
 
         "graphic_design" => [
-            "image" => asset('frontend/img/course-5.jpg'),
+            "image" => 'frontend/img/course-5.jpg',
 
             "title" => "Graphic Design",
 
@@ -353,7 +353,7 @@ return [
         ],
 
         "ielts_pte" => [
-            "image" => asset('frontend/img/course-6.jpg'),
+            "image" => 'frontend/img/course-6.jpg',
 
             "title" => "IELTS / PTE",
 
