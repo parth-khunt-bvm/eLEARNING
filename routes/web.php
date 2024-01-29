@@ -7,6 +7,7 @@ use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\frontend\AboutController;
 use App\Http\Controllers\frontend\CoursesController;
 use App\Http\Controllers\frontend\ContactController;
+use App\Http\Controllers\frontend\GIMCoursesController;
 use App\Http\Controllers\frontend\StudentCornerControler;
 use App\Http\Controllers\frontend\StudentWorksController;
 
@@ -45,6 +46,8 @@ Route::get('about/student-works', [StudentWorksController::class, 'index'])->nam
 
 Route::get('why-i-choose-elearning', [StudentCornerControler::class, 'chooseElearning'])->name('why-i-choose-elearning');
 Route::get('placement-partners', [StudentCornerControler::class, 'placementPartners'])->name('placement-partners');
+
+Route::get('gim-course', [GIMCoursesController::class, 'gimCourses'])->name('gim-course');
 
 
 

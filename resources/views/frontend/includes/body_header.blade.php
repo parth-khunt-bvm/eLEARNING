@@ -10,6 +10,16 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
             <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
+
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">STD 10th & 12th</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="{{route('gim-course')}}" class="dropdown-item">GIM (Graduate In Multimedia)</a>
+                    <a href="#" class="dropdown-item">ITA-CS+</a>
+                    <a href="#" class="dropdown-item">Animation & VFX 2 year</a>
+                </div>
+            </div>
+
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
                 <div class="dropdown-menu fade-down m-0">

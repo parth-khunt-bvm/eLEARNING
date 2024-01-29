@@ -1,0 +1,34 @@
+.btn.btn-block.btn-lg {
+    width: 65px;
+    height:65px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.btn-soft-purple{
+    background-color: #e9eaf8;
+    color: #747ed1;
+}
+
+.btn-soft-green{
+    background-color: #e7f5f0;
+    color: #6bbea3;
+}
+.btn-soft-orange{
+    background-color: #feece9;
+    color:#f78b77;
+}
+
+.fs-22 {
+    font-size: 25px!important;
+}
+.fs-18{
+    font-size: 21px!important;
+}
+
+
