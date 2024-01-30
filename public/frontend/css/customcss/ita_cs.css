@@ -1,0 +1,98 @@
+.web-bg
+{
+    background-image: url(../../img/ethnical-hacking-background.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-red{
+    background-color: #e31e25;
+}
+
+.banner-list span
+{
+    padding: 10px
+}
+
+.container-div{
+    padding-top: 30px;
+}
+
+.btn.btn-block.btn-lg {
+    width: 65px;
+    height:65px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.btn-soft-purple{
+    background-color: #e9eaf8;
+    color: #747ed1;
+}
+
+.btn-soft-green{
+    background-color: #e7f5f0;
+    color: #6bbea3;
+}
+.btn-soft-orange{
+    background-color: #feece9;
+    color:#f78b77;
+}
+
+.fs-22 {
+    font-size: 25px!important;
+}
+.fs-18{
+    font-size: 18px!important;
+}
+
+.text-dark{
+    color: #343f52!important;
+}
+
+.bg-soft-primary {
+    background-color: #f1f5fd!important;
+}
+
+.fs-100{
+    font-size:100px;
+}
+
+.card {
+    box-shadow: 0 0 0 0.05rem rgba(8,60,130,.06), 0 0 1.25rem rgba(30,34,40,.04);
+    border: 0;
+}
+
+.b-red {
+    background-color: #e31e25;
+}
+
+.course-btn button, .course-btn .btn {
+    animation: btn_move 2s infinite;
+}
+.btn-white{
+    background-color: white;
+}
+
+.company-wrapper img {
+    width: 150px;
+}
+
+.company-wrapper {
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+    padding: 0 20px;
+    box-shadow: 0 10px 20px -7px #e4e4e4;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    transition: all .5s ease;
+    margin-bottom: 20px;
+}

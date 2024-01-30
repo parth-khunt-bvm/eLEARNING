@@ -5,9 +5,11 @@ use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\backend\LoginController;
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\frontend\AboutController;
+use App\Http\Controllers\frontend\animationController;
 use App\Http\Controllers\frontend\CoursesController;
 use App\Http\Controllers\frontend\ContactController;
 use App\Http\Controllers\frontend\GIMCoursesController;
+use App\Http\Controllers\frontend\ITACSController;
 use App\Http\Controllers\frontend\StudentCornerControler;
 use App\Http\Controllers\frontend\StudentWorksController;
 
@@ -48,6 +50,8 @@ Route::get('why-i-choose-elearning', [StudentCornerControler::class, 'chooseElea
 Route::get('placement-partners', [StudentCornerControler::class, 'placementPartners'])->name('placement-partners');
 
 Route::get('gim-course', [GIMCoursesController::class, 'gimCourses'])->name('gim-course');
+Route::get('ita-cs-ethical-hacking', [ITACSController::class, 'itaCsEthicalHacking'])->name('ita-cs-ethical-hacking');
+Route::get('animation', [animationController::class, 'animation'])->name('animation');
 
 
 

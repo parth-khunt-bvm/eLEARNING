@@ -15,8 +15,8 @@
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">STD 10th & 12th</a>
                 <div class="dropdown-menu fade-down m-0">
                     <a href="{{route('gim-course')}}" class="dropdown-item">GIM (Graduate In Multimedia)</a>
-                    <a href="#" class="dropdown-item">ITA-CS+</a>
-                    <a href="#" class="dropdown-item">Animation & VFX 2 year</a>
+                    <a href="{{route('ita-cs-ethical-hacking')}}" class="dropdown-item">ITA-CS+</a>
+                    <a href="{{route('animation')}}" class="dropdown-item">Animation & VFX 2 year</a>
                 </div>
             </div>
 
