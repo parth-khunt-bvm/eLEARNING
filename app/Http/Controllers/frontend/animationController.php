@@ -9,7 +9,7 @@ class animationController extends Controller
 {
    public function animation(){
     $data['css'] = array(
-        'customcss/ita_cs.css'
+        'customcss/animation.css'
     );
     $data['plugincss'] = array(
     );

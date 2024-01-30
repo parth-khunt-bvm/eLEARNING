@@ -1,0 +1,95 @@
+.animation-page-header{
+    background-image: url(../../animation_img/animation-slider-1.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gim-banner {
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.bg-gray {
+    opacity: 1;
+    background-color: rgba(var(--bs-gray-rgb),var(--bs-bg-opacity))!important;
+}
+
+.bg-img {
+    background-image:url(../../animation_img/bg-bg.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+
+.blur {
+    backdrop-filter: blur(30px) saturate(136%);
+    -webkit-backdrop-filter: blur(4px) saturate(136%);
+    background-color: transparent;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.125);
+}
+
+.py-10{
+    padding:50px 0px 50px 0px;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.rounded {
+    border-radius: 9px !important;
+}
+
+.card {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+}
+
+.bg-pale-leaf{
+    background-color: #eaf3ef;
+}
+.bg-pale-yellow{
+    background-color:#fef3e4;
+}
+.bg-pale-red{
+    background-color: #fae6e7;
+}
+.bg-pale-primary{
+    background-color: #e0e9fa;
+}
+
+.bg-primary, .btn-primary {
+    background-color: #02395a!important;
+    border-color: #02395a!important;
+}
+
+.text-line {
+    position: relative;
+    vertical-align: top;
+    padding-left: 1.4rem;
+}
+
+.accordion-wrapper .card-header {
+    margin-bottom: 0;
+    background: 0 0;
+    border: 0;
+    padding: 0.9rem 1.3rem 0.85rem;
+}
+.card-header:first-child {
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+
+.font{
+    font-size: 20px;
+    font-weight: 450;
+    background-color: #ffffff;
+}
+
