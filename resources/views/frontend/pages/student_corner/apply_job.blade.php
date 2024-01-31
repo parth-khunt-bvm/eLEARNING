@@ -65,7 +65,7 @@
                             <div class="col-12">
                                 <div class="form-floating">
                                     <input type="file" class="form-control" id="resume" name="resume"
-                                        placeholder="Resume">
+                                        placeholder="Resume" accept=".pdf,application/pdf">
                                     <label for="resume">Resume upload</label>
                                 </div>
                             </div>
