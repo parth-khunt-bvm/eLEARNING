@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\frontend\EmpApplicationController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\backend\LoginController;
@@ -46,6 +47,11 @@ Route::get('contact', [ContactController::class, 'index'])->name('contact');
 Route::post('contact-save', [ContactController::class, 'save'])->name('contact-save');
 Route::get('about/student-works', [StudentWorksController::class, 'index'])->name('student-works');
 
+Route::get('emp-application', [EmpApplicationController::class, 'index'])->name('emp-application');
+Route::post('emp-application-save', [EmpApplicationController::class, 'save'])->name('emp-application-save');
+
+
+Route::get('student-placement', [StudentCornerControler::class, 'studentPlacement'])->name('student-placement');
 Route::get('why-i-choose-elearning', [StudentCornerControler::class, 'chooseElearning'])->name('why-i-choose-elearning');
 Route::get('placement-partners', [StudentCornerControler::class, 'placementPartners'])->name('placement-partners');
 

@@ -5,6 +5,7 @@ use App\Http\Controllers\backend\DashboardController;
 use App\Http\Controllers\backend\LoginController;
 use App\Http\Controllers\backend\AdminusersController;
 use App\Http\Controllers\backend\AdminConatctDataController;
+use App\Http\Controllers\backend\EmpApplicationController;
 
 Route::get('admin-logout', [LoginController::class, 'adminLogout'])->name('admin-logout');
 
@@ -34,5 +35,8 @@ Route::group(['prefix' => $adminPrefix, 'middleware' => ['admin']], function() {
     Route::post('admin-conatct-data/save-import-conatct-data', [AdminConatctDataController::class, 'save_import'])->name('admin-conatct-data.save-import-conatct-data');
     Route::get('admin-conatct-data/export',[AdminConatctDataController::class, 'getContactData'])->name('admin-conatct-data.export');
     Route::get('admin-conatct-data/pdf', [AdminConatctDataController::class, 'contactDataPdf'])->name('admin-conatct-data.pdf');
+
+    Route::get('admin/emp-application/list', [EmpApplicationController::class, 'list'])->name('admin-emp-application.list');
+    Route::post('admin/emp-application/ajaxcall', [EmpApplicationController::class, 'ajaxcall'])->name('admin-emp-application.ajaxcall');
 
 });

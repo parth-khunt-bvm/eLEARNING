@@ -8,40 +8,40 @@
 @section('page-contain')
     <div class="web-bg ethnical-bg pb-5">
         <div class="container">
-        <div class="row align-items-center container-div">
-            <div class="text-light col-lg-6">
-                <h1 class="fw-bolder py-2 text-light">16 Months <br> Ethical Hacking Course</h1>
-                <h6 class="fw-bold py-2 text-light">Master the skill of programming browsers, servers, and databases with
-                    our experts while working on live projects.</h6>
-                <h3 class="py-3 text-light">100% Job</h3>
-                <ul class="row ps-0 pb-2 banner-list">
-                    <div class="col-sm-5">
-                        <li class="py-4"><span class="me-2 background-red rounded-circle"><img
-                                    src=" {{ asset('frontend/img/tutor.png') }}" alt=""
-                                    class="img-fluid"></span>Experienced Tutors</li>
-                        <li class="py-4"><span class="img-fluid me-2 background-red rounded-circle"><img
-                                    src="{{ asset('frontend/img/web-programming.png') }}" alt=""
-                                    class="img-fluid"></span>Rich Learning Content</li>
-                    </div>
-                    <div class="col-sm-7">
-                        <li class="py-4"><span class="me-2 background-red rounded-circle"><img
-                                    src="{{ asset('frontend/img/solution.png') }}" alt=""
-                                    class="img-fluid"></span>Practical-based Teaching Approach</li>
-                        <li class="py-4"><span class="me-2 background-red rounded-circle"><img
-                                    src="{{ asset('frontend/img/briefing.png') }}" alt=""
-                                    class="img-fluid"></span>Industry-oriented Projects</li>
-                    </div>
-                </ul>
-                <button class="btn bg-light me-2 mb-1" style="color: #e31e25;" data-bs-toggle="modal"
-                    data-bs-target=".inq_form">Apply Now</button>
-                <a href="https://www.youtube.com/watch?v=2YW__Fm5W30" target="__blank"><button
-                        class="btn text-light me-2 mb-1" style="background: #e31e25;">Watch The Intro Video</button></a>
-            </div>
-            <div class="col-lg-6 d-lg-block d-none">
-                <img src=" {{ asset('frontend/img/ethnical-vector.png') }} " class="img-fluid" alt="full-stack-banner">
+            <div class="row align-items-center container-div">
+                <div class="text-light col-lg-6">
+                    <h1 class="fw-bolder py-2 text-light">16 Months <br> Ethical Hacking Course</h1>
+                    <h6 class="fw-bold py-2 text-light">Master the skill of programming browsers, servers, and databases with
+                        our experts while working on live projects.</h6>
+                    <h3 class="py-3 text-light">100% Job</h3>
+                    <ul class="row ps-0 pb-2 banner-list">
+                        <div class="col-sm-5">
+                            <li class="py-4"><span class="me-2 background-red rounded-circle"><img
+                                        src=" {{ asset('frontend/img/tutor.png') }}" alt=""
+                                        class="img-fluid"></span>Experienced Tutors</li>
+                            <li class="py-4"><span class="img-fluid me-2 background-red rounded-circle"><img
+                                        src="{{ asset('frontend/img/web-programming.png') }}" alt=""
+                                        class="img-fluid"></span>Rich Learning Content</li>
+                        </div>
+                        <div class="col-sm-7">
+                            <li class="py-4"><span class="me-2 background-red rounded-circle"><img
+                                        src="{{ asset('frontend/img/solution.png') }}" alt=""
+                                        class="img-fluid"></span>Practical-based Teaching Approach</li>
+                            <li class="py-4"><span class="me-2 background-red rounded-circle"><img
+                                        src="{{ asset('frontend/img/briefing.png') }}" alt=""
+                                        class="img-fluid"></span>Industry-oriented Projects</li>
+                        </div>
+                    </ul>
+                    <button class="btn bg-light me-2 mb-1" style="color: #e31e25;" data-bs-toggle="modal"
+                        data-bs-target=".inq_form">Apply Now</button>
+                    <a href="https://www.youtube.com/watch?v=2YW__Fm5W30" target="__blank"><button
+                            class="btn text-light me-2 mb-1" style="background: #e31e25;">Watch The Intro Video</button></a>
+                </div>
+                <div class="col-lg-6 d-lg-block d-none">
+                    <img src=" {{ asset('frontend/img/ethnical-vector.png') }} " class="img-fluid" alt="full-stack-banner">
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
 
@@ -181,50 +181,50 @@
         </div>
     </div>
 
-   <!-- Service Start -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item text-center pt-3">
-                    <div class="p-4">
-                        <i class="fa fa-3x far fa-user text-primary mb-4"></i>
-                        <h5 class="mb-3">100,000+</h5>
-                        <p>Career Awareness Counselling</p>
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x far fa-user text-primary mb-4"></i>
+                            <h5 class="mb-3">100,000+</h5>
+                            <p>Career Awareness Counselling</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item text-center pt-3">
-                    <div class="p-4">
-                        <i class="fas fa-3x fa-certificate text-primary mb-4"></i>
-                        <h5 class="mb-3">37,500+</h5>
-                        <p>Passout Students</p>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fas fa-3x fa-certificate text-primary mb-4"></i>
+                            <h5 class="mb-3">37,500+</h5>
+                            <p>Passout Students</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item text-center pt-3">
-                    <div class="p-4">
-                        <i class="fas fa-3x  fa-suitcase text-primary mb-4"></i>
-                        <h5 class="mb-3">100%</h5>
-                        <p>Placed Students</p>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fas fa-3x  fa-suitcase text-primary mb-4"></i>
+                            <h5 class="mb-3">100%</h5>
+                            <p>Placed Students</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="service-item text-center pt-3">
-                    <div class="p-4">
-                        <i class="fa far fa-3x  fa-user text-primary mb-4"></i>
-                        <h5 class="mb-3">1250+</h5>
-                        <p>Companies Tie-Ups</p>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa far fa-3x  fa-user text-primary mb-4"></i>
+                            <h5 class="mb-3">1250+</h5>
+                            <p>Companies Tie-Ups</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Service End -->
+    <!-- Service End -->
 
     <div class="container">
         <div class="row pt-5">

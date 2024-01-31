@@ -1,0 +1,65 @@
+.student-placement-header{
+    background-image: url(../../img/studentplacement-new.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gim-banner {
+    height: 70vh;
+}
+
+.section-padding {
+    padding: 30px 0;
+}
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-dot {
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #222222 !important;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.owl-dot.active {
+    background-color: #12699a !important;
+}
+
+
+.rounded-circle {
+    border-radius: 50%!important;
+}
+.align-self-center {
+    align-self: center!important;
+}
+
+.h-15 {
+    height: 5rem!important;
+}
+.w-15 {
+    width: 5rem!important;
+}
+.nav-tabs .nav-link.active {
+    color: #3f78e0;
+    background-color: #fff;
+    border-color: rgba(164,174,198,.2);
+}
+
+.nav-tabs .nav-link {
+    background: #fff;
+    font-size: 1.2rem;
+    padding: 0.7rem 1.4rem;
+    color: black;
+    font-weight: 500;
+}
+
+.card {
+    box-shadow: 0 0 0 0.05rem rgba(8,60,130,.06), 0 0 1.25rem rgba(30,34,40,.04);
+    border: 0;
+}
