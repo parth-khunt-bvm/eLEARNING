@@ -1,5 +1,4 @@
 <?php
-    return [
-        'PROJECT_NAME' => 'eLEARNING ',
-    ];
-?>
+return [
+    'PROJECT_NAME' => 'NDMS ',
+];

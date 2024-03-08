@@ -24,7 +24,8 @@ use App\Http\Controllers\frontend\StudentWorksController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/clear-cache', function() {
+
+Route::get('/clear-cache', function () {
     Artisan::call('cache:clear');
     echo "Cache is cleared<br>";
     Artisan::call('route:clear');
@@ -52,13 +53,9 @@ Route::post('emp-application-save', [EmpApplicationController::class, 'save'])->
 
 
 Route::get('student-placement', [StudentCornerControler::class, 'studentPlacement'])->name('student-placement');
-Route::get('why-i-choose-elearning', [StudentCornerControler::class, 'chooseElearning'])->name('why-i-choose-elearning');
+Route::get('why-i-choose-ndme', [StudentCornerControler::class, 'chooseElearning'])->name('why-i-choose-ndme');
 Route::get('placement-partners', [StudentCornerControler::class, 'placementPartners'])->name('placement-partners');
 
 Route::get('gim-course', [GIMCoursesController::class, 'gimCourses'])->name('gim-course');
 Route::get('ita-cs-ethical-hacking', [ITACSController::class, 'itaCsEthicalHacking'])->name('ita-cs-ethical-hacking');
 Route::get('animation', [animationController::class, 'animation'])->name('animation');
-
-
-
-

@@ -7,8 +7,26 @@
 {{-- End Meta tag sectiopn --}}
 @section('page-contain')
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 gim-page-header bg-gray">
+<!-- Header Start -->
+<!-- Header Start -->
+<div class="container-fluid bg-primary py-5 mb-5 page-header">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h1 class="display-3 text-white animated slideInDown">About Us</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">After STD 10 & 12</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+<!-- <div class="container-fluid bg-primary py-5 mb-5 gim-page-header bg-gray">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
@@ -24,13 +42,12 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Header End -->
-    <div class="container">
-        <div class="card shadow-none my-n15 my-lg-n17 gim-wrapper rounded"
-            style="margin-top: -113px; margin-right:-67px; margin-left:-71px; border-style: none;">
-            <div class="card-body rounded" style="padding: 40px; ">
-                <div class="row">
+    </div> -->
+<!-- Header End -->
+<div class="container">
+    <div class="card shadow-none my-n15 my-lg-n17 gim-wrapper rounded" style="margin-right:-67px; margin-left:-71px; border-style: none;">
+        <div style="">
+            <!-- <div class="row">
                     <div class="mb-10 text-center">
                         <div class="p-5 pb-0 rounded border">
                             <h2 class="text-center">કોલેજ કે ઉચ્ચ શિક્ષણ પછી પણ શા માટે વિદ્યાર્થીઓ ને નોકરી નથી
@@ -74,8 +91,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row align-items-center my-6 mt-5">
+                </div> -->
+            <!-- <div class="row align-items-center my-6 mt-5">
                     <div class="col-12 py-4">
                         <h2 class="text-center">કેવી હોવી જોઈએ એજ્યુકેશન સિસ્ટમ? </h2>
                         <p class="text-center">હાર્વર્ડ અને કેમ્બ્રિજ કે જે દુનિયાની સૌથી બેસ્ટ યુનિવર્સીટી છે
@@ -106,8 +123,72 @@
                             </p>
                         </div>
                     </div>
+                </div> -->
+            <div class="row align-items-center my-6 mt-5">
+                <div class="col-12 mb-5">
+                    <h2 class="text-center">WHY IT?</h2>
+                    <p class="text-center">New Dreamz Multimedia embodies a visionary mission to propel Gujarat towards a future where every individual is equipped with the expertise and skills to thrive in the dynamic IT sector. Our commitment lies in aligning with the government's goal of fostering employment-oriented education, and we believe that the key to achieving this lies in empowering individuals with comprehensive IT knowledge and proficiency.</p>
+                    <p class="text-center">In a world where technology drives progress and innovation, the demand for skilled IT professionals is ever-growing. Recognizing this need, New Dreamz Multimedia endeavors to bridge the gap between education and employment by offering top-notch training and resources to individuals from all walks of life. Our goal is not only to impart technical knowledge but also to instill a mindset of creativity, problem-solving, and adaptability that are essential in today's digital landscape.</p>
                 </div>
-                <div class="row my-10 align-items-center mt-6">
+                <div class="col-lg-4 col-4 mb-4">
+                    <div class="text-center">
+                        <span class="icon btn btn-block btn-lg btn-soft-purple mb-2"><span class="number fs-22">01</span></span>
+                        <p class="text-dark mb-0 fw-bold fs-18 mt-1"><strong class="fs-18">90% Practical, 10% Theory</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-4 mb-4">
+                    <div class="text-center">
+                        <span class="icon btn btn-block btn-lg btn-soft-green mb-2"><span class="number fs-22">02</span></span>
+                        <p class="text-dark mb-0 fw-bold mt-1"><strong class="fs-18">Projects and Case Studies</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-4 mb-4">
+                    <div class="text-center">
+                        <span class="icon btn btn-block btn-lg btn-soft-orange mb-2"><span class="number fs-22">03</span></span>
+                        <p class="text-dark mb-0 fw-bold mt-1">
+                            <strong class="fs-18">Innovation and Creativity</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center my-6 mt-5">
+                <div class="col-12 py-4">
+                    <h2 class="text-center">Who can do IT?</h2>
+                    <p class="text-center">
+                        At New Dreamz Multimedia, we believe that the world of Information Technology (IT) is accessible to all, regardless of academic background or life circumstances. Whether you're a recent graduate, a resilient student seeking a fresh start, a dedicated homemaker eager to learn, or an aspiring entrepreneur with big dreams, our programs cater to individuals from all walks of life. With our supportive learning environment and comprehensive curriculum, we empower everyone to unlock their potential and pursue rewarding careers in the dynamic IT sector. Join us at New Dreamz Multimedia, and together, let's embrace the endless possibilities of IT education for all.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-8">
+                    <div class="card shadow p-4">
+                        <h2 class="text-center mb-4">How to Choose Your Career?</h2>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">Identify your skills and align your career accordingly.</li>
+                            <li class="list-group-item">Prioritize practical skills over theoretical knowledge.</li>
+                            <li class="list-group-item">Consider choosing a career based on hands-on experience.</li>
+                            <li class="list-group-item">Avoid basing your career decisions solely on others' opinions or unrealistic expectations.</li>
+                            <li class="list-group-item">Research potential career paths and explore various industries.</li>
+                            <li class="list-group-item">Seek guidance from mentors or professionals in your desired field.</li>
+                            <li class="list-group-item">Evaluate the growth prospects and job market demand for your chosen career.</li>
+                            <li class="list-group-item">Continuously update your skills and adapt to industry trends.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row align-items-center my-6 mt-5">
+    <div class="col-12 py-4">
+        <h2 class="text-center">How to choose your career?</h2>
+        <ul class="text-center">
+            <li>Identify your own skills and choose your career accordingly.</li>
+            <li>Choosing knowledge based on skills rather than book knowledge.</li>
+            <li>Choosing a career based on experience.</li>
+            <li>Never choose your career by listening to others and relatives or by being delusional.</li>
+        </ul>
+    </div>
+</div> -->
+
+            <!-- <div class="row my-10 align-items-center mt-6">
                     <div class="col-lg-6 col-md-6 col-12 text-center mt-5">
                         <h3 class="mb-3">તેમજ વિદેશ ની એજ્યુકેશન સિસ્ટમ કેવી હોઈ છે?</h3>
                         <p>વિદેશ ની જે એજ્યુકેશન સિસ્ટમ થી આકર્ષાઈ ને ભારતીય વિદ્યાર્થીઓ ત્યાં ભણવા જાય છે તે જ
@@ -153,8 +234,8 @@
                     <div class="text-center course-btn mt-3" data-bs-toggle="modal" data-bs-target="#">
                         <button class="btn btn-primary btn-sm mt-4">Apply For This Module</button>
                     </div>
-                </div>
-                <div class="row mb-5 align-items-center mt-0 mt-5">
+                </div> -->
+            <!-- <div class="row mb-5 align-items-center mt-0 mt-5">
                     <div class="mb-5">
                         <h2 class="text-center">GIM જ શા માટે?</h2>
                         <p class="text-center mt-2">ઘણીવાર વિદ્યાર્થીઓ મિત્રોની દેખાદેખી, લોકોની સલાહ કે ઘરની
@@ -180,8 +261,8 @@
                     <div class="text-center course-btn mt-3" data-bs-toggle="modal" data-bs-target=".inq_form">
                         <button class="btn btn-primary btn-sm mt-4">Apply For This Module</button>
                     </div>
-                </div>
-                <div class="row mb-0 align-items-center mt-3">
+                </div> -->
+            <!-- <div class="row mb-0 align-items-center mt-3">
                     <div class="mb-5 mx-auto col-md-8 col-sm-12">
                         <h2 class="text-center mb-4">ફાયદાઓ</h2>
                         <ul class="icon-list bullet-bg bullet-soft-primary mb-0" style="list-style-type: none;">
@@ -210,13 +291,13 @@
                             </li>
                         </ul>
                         <div class="mt-5 text-center">
-                            <a href="https://api.whatsapp.com/send?phone=917984711520&amp;text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20College"
+                            <a href="https://api.whatsapp.com/send?phone=9193754403&amp;text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20College"
                                 target="_blank" class="fw-normal course-btn"><button
                                     class="btn btn-primary btn-sm">Whatsapp કરો</button></a>
                         </div>
                     </div>
-                </div>
-                <div class="mb-4">
+                </div> -->
+            <!-- <div class="mb-4">
                     <h2 class="text-center">GIM માં શું આવશે?</h2>
                     <p class="text-center">IT કે Computer ક્ષેત્રમાં આવતા 9 ફિલ્ડમાં થી ક્યાં ફિલ્ડ માં ભણવું
                         કે ઉત્તીર્ણ થવું તેના માટે શરૂઆતના ચાર મહિના બધી જ ફિલ્ડ વિષે ભણીશું, તેને લગતા
@@ -292,10 +373,10 @@
                         <button class="btn btn-primary btn-sm mt-4">100% નોકરી લક્ષી કોર્ષ માટે આજે જ એપ્લાય
                             કરો</button>
                     </div>
-                </div>
-            </div>
+                </div> -->
         </div>
     </div>
+</div>
 
 
 @endsection

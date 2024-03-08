@@ -6,7 +6,7 @@
 {{-- End Meta tag sectiopn --}}
 @section('page-contain')
 @php
-    $course = Config::get('courses_details.courses_details');
+$course = Config::get('courses_details.courses_details');
 @endphp
 <!-- Header Start -->
 <div class="container-fluid bg-primary py-5 mb-5 page-header">
@@ -35,31 +35,30 @@
         </div>
         <div class="row g-4 justify-content-center">
             @foreach ($course as $course_key => $value)
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <a href="{{route('courses-detail', $course_key)}}">
-                                <img class="img-fluid" src="{{ asset($value['image']) }}" alt="">
-                            </a>
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="{{route('courses-detail', $course_key)}}" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
-                                    style="border-radius: 30px 0 0 30px;">Read More</a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <a href="{{route('courses-detail', $course_key)}}">
-                                <h5 class="mb-4">{{  $value['title'] }}</h5>
-                            </a>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                        <a href="{{route('courses-detail', $course_key)}}">
+                            <img class="img-fluid" src="{{ asset($value['image']) }}" alt="">
+                        </a>
+                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            <a href="{{route('courses-detail', $course_key)}}" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="">Read More</a>
                         </div>
                     </div>
+                    <div class="text-center p-4">
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <a href="{{route('courses-detail', $course_key)}}">
+                            <h5 class="mb-4">{{ $value['title'] }}</h5>
+                        </a>
+                    </div>
                 </div>
+            </div>
             @endforeach
 
         </div>
@@ -75,8 +74,7 @@
         </div>
         <div class="owl-carousel testimonial-carousel position-relative">
             <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="{{  asset('frontend/img/testimonial-1.jpg') }}"
-                    style="width: 80px; height: 80px;">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="{{  asset('frontend/img/testimonial-1.jpg') }}" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">Archil Hirapra</h5>
                 <p>Node js Devloper</p>
                 <div class="testimonial-text bg-light text-center p-4">
@@ -86,8 +84,7 @@
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="{{  asset('frontend/img/testimonial-2.jpg') }}"
-                    style="width: 80px; height: 80px;">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="{{  asset('frontend/img/testimonial-2.jpg') }}" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">Vishal Gajera</h5>
                 <p>IOS Devloper</p>
                 <div class="testimonial-text bg-light text-center p-4">
@@ -97,8 +94,7 @@
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="{{  asset('frontend/img/testimonial-3.jpg') }}"
-                    style="width: 80px; height: 80px;">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="{{  asset('frontend/img/testimonial-3.jpg') }}" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">Shruti Davra</h5>
                 <p>UI/UX Desiner</p>
                 <div class="testimonial-text bg-light text-center p-4">
@@ -107,8 +103,7 @@
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="{{  asset('frontend/img/testimonial-4.jpg') }}"
-                    style="width: 80px; height: 80px;">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="{{  asset('frontend/img/testimonial-4.jpg') }}" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">Rahul Patel</h5>
                 <p>Androis Devloper</p>
                 <div class="testimonial-text bg-light text-center p-4">

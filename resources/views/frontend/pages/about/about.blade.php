@@ -79,8 +79,7 @@
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                 <div class="position-relative h-100">
-                    <img class="img-fluid position-absolute w-100 h-100" src="{{  asset('frontend/img/about.jpg') }}" alt=""
-                        style="object-fit: cover;">
+                    <img class="img-fluid position-absolute w-100 h-100" src="{{  asset('frontend/img/about.jpg') }}" alt="" style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -96,6 +95,15 @@
                     hard to achieve this goal and dedicated our time and resources to train students extensively.
                 </p>
                 <div class="row gy-2 gx-4 mb-4">
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>LIFE LONG SUPPORT</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>PROVIDE LATEST TECHNOLOGY</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Expert Faculty</p>
+                    </div>
                     <div class="col-sm-6">
                         <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
                     </div>
@@ -117,7 +125,23 @@
                         </p>
                     </div>
                 </div>
-                <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                <h6 class="section-title bg-white text-start pe-3 mt-3" style="color:#e12028">OUR VISION</h6>
+                <p class="mb-4">Our mission is to advance students' lives through technology.</p>
+
+                <h6 class="section-title bg-white text-start pe-3" style="color:#e12028">OUR MISSION</h6>
+                <p class="mb-4">To impart every knowledge of IT field to every student, developing in today's competitive times.</p>
+                <h6 class="section-title bg-white text-start pe-3" style="color:#e12028">WHY CHOOSE US?</h6>
+                <ul>
+                    <li>ONGOING MAINTENANCE AND SUPPORT</li>
+                    <li>QUICK EMPLOYMENT</li>
+                    <li>EASY CAREER GROWTH</li>
+                    <li>A VARIETY OF CAREER OPPORTUNITY</li>
+                    <li>IT PAYS WELL</li>
+                    <li>A REASONABLE EDUCATION</li>
+                    <li>BACK AND SUPPORT</li>
+                    <li>LIVE PROJECTS</li>
+                    <li>COMPANY ORIENTED TRAINING</li>
+                </ul>
             </div>
         </div>
     </div>

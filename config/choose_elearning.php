@@ -4,24 +4,23 @@ return [
         "student_review" => [
             [
                 'images' => [
-                    ["image1" => 'frontend/img/about.jpg'],
-                    ["image2" => 'frontend/img/about.jpg'],
+                    ["image1" => 'frontend/img/student1.jpg'],
+                    ["image2" => 'frontend/img/student2.jpg'],
                 ],
-
                 'para' => [
-                    ["para1" => ' I decided to join there back in 2008. And today, I am a senior team lead of the entire graphics team at a multinational organization.provided me with the tools and mindset required to advance in my career. My whole course at Elearning was worth it. It was challenging, and Elearning helped me get to destiny. After reaching this standard and level, when I look back, I can see only Elearning that made my career right from the ground to the sky. Hats off to you guys, and God bless you!!'],
-                    ["para2" => '"Amazing infrastructure with all required facilities that make learning quite easy as anything. So I choose Elearning over any other institute."'],
+                    ["para1" => 'My name is Bhargav Shingala, and I am currently pursuing BBA. I have completed a course in digital marketing and further enhanced my skills by learning C and C++ programming languages from Dreamz classes. Rahul sir, my mentor, has been instrumental in honing my abilities, and my experience with him has been nothing short of exceptional.'],
+                    ["para2" => 'This class offers an exceptional learning experience for the IT field. The course material was presented with great clarity and precision, with every concept being thoroughly explained. The instructor provides a detailed breakdown of each point, ensuring a comprehensive understanding of the subject matter.This was bestest class for IT field. the concept are very clear. each and every points are explained in detail.'],
                 ]
             ],
             [
                 'images' => [
-                    ["image1" => 'frontend/img/about.jpg'],
+                    ["image1" => 'frontend/img/student3.jpg'],
                     ["image2" => 'frontend/img/about.jpg'],
                 ],
 
                 'para' => [
-                    ["para1" => 'The unique and internationally recognized course structure that helps students to keep updated with the latest trend and market requirements helps students be prepared for local and international job markets. This is the main reason I choose the institutes Elearning group'],
-                    ["para2" => 'I feel glad that I have chosen to be part of Elearning international because, along with knowledge of the extracurricular activities such as personality development, sports week, and technical events such'],
+                    ["para1" => 'I did my graphic design course from new Dreamz multimedia Education. It helps me a lot to grow my career.they really put 100% afforts to get you know about the design and it’s interesting as well. These faculties have been very supportive of my career growth.'],
+                    ["para2" => 'I feel glad that I have chosen to be part of NDME international because, along with knowledge of the extracurricular activities such as personality development, sports week, and technical events such'],
                 ]
             ],
         ],
